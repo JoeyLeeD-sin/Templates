@@ -27,11 +27,17 @@ int half(int value)
 	return static_cast<int>(round(value / 2.0));
 }
 
-
+// Main function used to test the half templated and regular functions
 
 int main()
 {
+	double a = 7.0;
+	float b = 5.0f;
+	int c = 3;
 
+	cout << half(a) << endl;
+	cout << half(b) << endl;
+	cout << half(c) << endl;
 
-
+	return 0;
 }
